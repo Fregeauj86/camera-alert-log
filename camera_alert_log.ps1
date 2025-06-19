@@ -1,7 +1,7 @@
-$ip = "192.168.1.8"
+$ip = "192.168.0.X"
 $logFile = "camera_log.txt"
-$botToken = "7665438938:AAGkftuhKbenIeOXh0RdvgBbBFKQOxtnQ_w"
-$chatId = 5067814050
+$botToken = "YOUR_BOT_TOKEN"
+$chatId = "YOUR_CHAT_ID"
 $alertSent = $false
 
 while ($true) {
@@ -13,7 +13,7 @@ while ($true) {
         Add-Content -Path $logFile -Value "${timestamp}: Camera is OFFLINE"
 
         if ($lastStatus -ne "offline") {
-            $message = "🚨 Your IPC360 camera at $ip is OFFLINE!"
+            $message = "🚨 Your BRAND_NAME camera at $ip is OFFLINE!"
             $url = "https://api.telegram.org/bot$botToken/sendMessage?chat_id=$chatId&text=$([uri]::EscapeDataString($message))"
             Write-Output "Sending Telegram alert: $message"
             Invoke-RestMethod -Uri $url -Method Get
@@ -29,7 +29,7 @@ while ($true) {
         Add-Content -Path $logFile -Value "${timestamp}: Camera is ONLINE"
 
         if ($lastStatus -ne "online") {
-            $message = "✅ Your IPC360 camera at $ip is back ONLINE."
+            $message = "✅ Your BRAND_NAME camera at $ip is back ONLINE."
             $url = "https://api.telegram.org/bot$botToken/sendMessage?chat_id=$chatId&text=$([uri]::EscapeDataString($message))"
             Write-Output "Sending Telegram alert: $message"
             Invoke-RestMethod -Uri $url -Method Get
