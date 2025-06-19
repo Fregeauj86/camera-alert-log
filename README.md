@@ -22,7 +22,7 @@ This PowerShell script monitors a network-connected IPC360 camera and alerts you
 - Windows 10 or 11
 - PowerShell 5.1+ (uses toast popups on Windows)
 - A Telegram bot token and your chat ID
-- IPC360 camera (or any device) with a **static IP**, e.g., `192.168.1.8`
+- IPC360 camera (or any device) with a **static IP**, e.g., `192.168.0.0`
 
 ---
 
