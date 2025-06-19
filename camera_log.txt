@@ -1,0 +1,59 @@
+@echo off
+:loop
+ping 192.168.1.8 -n 1 >nul
+if errorlevel 1 (
+    echo [%date% %time%] Camera is OFFLINE >> camera_log.txt
+    echo Camera is offline!
+) else (
+    echo [%date% %time%] Camera is online >> camera_log.txt
+)
+timeout /t 60
+goto loop[19-Jun-25 23:43:46.74] Camera is online 
+[19-Jun-25 23:44:46.21] Camera is online 
+[19-Jun-25 23:45:50.06] Camera is OFFLINE 
+[19-Jun-25 23:46:53.07] Camera is online 
+[19-Jun-25 23:47:54.57] Camera is online 
+[19-Jun-25 23:48:55.57] Camera is online 
+[19-Jun-25 23:49:56.57] Camera is online 
+[19-Jun-25 23:50:57.57] Camera is online 
+[19-Jun-25 23:51:58.57] Camera is online 
+[19-Jun-25 23:52:59.56] Camera is online 
+[19-Jun-25 23:54:00.56] Camera is online 
+[19-Jun-25 23:55:01.57] Camera is online 
+[19-Jun-25 23:56:02.57] Camera is online 
+[19-Jun-25 23:57:03.58] Camera is online 
+[19-Jun-25 23:58:04.57] Camera is online 
+[19-Jun-25 23:59:05.56] Camera is online 
+[20-Jun-25  0:00:06.57] Camera is online 
+2025-06-20 00:03:32 Camera is OFFLINE
+2025-06-20 00:04:35 Camera is online
+2025-06-20 00:05:00 Camera is online
+2025-06-20 00:06:00 Camera is online
+2025-06-20 00:06:17 Camera is online
+2025-06-20 00:07:17 Camera is online
+2025-06-20 00:08:17 Camera is online
+2025-06-20 00:10:57: Camera is ONLINE
+2025-06-20 00:11:57: Camera is ONLINE
+2025-06-20 00:12:57: Camera is OFFLINE
+2025-06-20 00:13:53: Camera is ONLINE
+2025-06-20 00:14:57: Camera is OFFLINE
+2025-06-20 00:15:57: Camera is ONLINE
+2025-06-20 00:17:01: Camera is OFFLINE
+2025-06-20 00:18:02: Camera is ONLINE
+2025-06-20 00:18:29: Camera is ONLINE
+2025-06-20 00:19:30: Camera is ONLINE
+2025-06-20 00:20:30: Camera is ONLINE
+2025-06-20 00:21:30: Camera is ONLINE
+2025-06-20 00:22:30: Camera is ONLINE
+2025-06-20 00:23:30: Camera is ONLINE
+2025-06-20 00:24:30: Camera is ONLINE
+2025-06-20 00:24:58: Camera is ONLINE
+2025-06-20 00:26:35: Camera is ONLINE
+2025-06-20 00:27:41: Camera is ONLINE
+2025-06-20 00:28:41: Camera is ONLINE
+2025-06-20 00:28:45: Camera is ONLINE
+2025-06-20 00:29:26: Camera is ONLINE
+2025-06-20 00:30:27: Camera is ONLINE
+2025-06-20 00:31:21: Camera is ONLINE
+2025-06-20 00:32:22: Camera is ONLINE
+2025-06-20 00:33:22: Camera is ONLINE
